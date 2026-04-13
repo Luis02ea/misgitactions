@@ -1,8 +1,10 @@
 name: GitHub Actions Practica
 on: [push]
+
 jobs:
   Explorando-GitHub-Actions:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest   # 👈 ESTA LINEA FALTABA
+
     steps:
       - run: |
           echo "El flujo de trabajo ha sido ejecutado en el evento: ${{ github.event_name }}"
